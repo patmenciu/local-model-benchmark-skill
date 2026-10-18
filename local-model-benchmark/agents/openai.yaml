@@ -1,0 +1,4 @@
+interface:
+  display_name: "本地模型能力测评"
+  short_description: "以全新虚构任务比较本地模型的质量与用时，保留复核、稳定性和隐私边界"
+  default_prompt: "使用 $local-model-benchmark 比较我已安装的本地模型，先检查运行条件，只用合成题目，分别报告质量、用时和未验证项。"

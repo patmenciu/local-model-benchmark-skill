@@ -1,0 +1,32 @@
+{
+  "schema_version": "local-benchmark-result-1",
+  "suite_version": "public-synthetic-1",
+  "suite_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "batch_id": "example-batch",
+  "hardware_id": "example-device",
+  "data_kind": "demo",
+  "run_status": "incomplete",
+  "contract": {
+    "runner_version": "external-adapter-v1",
+    "settings_id": "native-defaults-tools-v1",
+    "model_limit_seconds": 1800,
+    "request_limit_seconds": null
+  },
+  "model": {
+    "tag": "example-model",
+    "fingerprint": "example-fingerprint",
+    "quantization": "example-quantization",
+    "template_hash": "example-template-hash"
+  },
+  "tasks": [
+    {"id": "F01", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": []},
+    {"id": "F02", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": []},
+    {"id": "C01", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": []},
+    {"id": "C02", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": []},
+    {"id": "C03", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": []},
+    {"id": "T01", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": []},
+    {"id": "T02", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": []},
+    {"id": "D01", "status": "not_run", "score": 0, "model_seconds": 0, "evidence": [], "review": {"facts": 0, "blind": 0, "cap": null, "locked": false}}
+  ],
+  "hard_failures": []
+}

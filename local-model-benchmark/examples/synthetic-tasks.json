@@ -1,0 +1,67 @@
+{
+  "suite_version": "public-synthetic-1",
+  "material_origin": "All tasks and documents were newly authored as fiction for this public package. No personal source files were used.",
+  "tasks": [
+    {
+      "id": "F01",
+      "prompt": "纯虚构练习：演示站甲原记240件合格检查样本，其中180件通过。复核发现40件不属于本次样本，应只从甲的分母中剔除，已通过的180件不变。演示站乙独立有100件，其中80件通过，不作修订。给出甲修订后的分子、分母、通过率，并说明旧口径是多少、乙是否变化。不要引入题外信息。"
+    },
+    {
+      "id": "F02",
+      "prompt": "纯虚构流程：A读取配置；B解析记录依赖A；C核验字段依赖A；D合并结果依赖B和C；E生成演示报告依赖D。给出一个合法执行顺序，说明哪些步骤能交换，以及D需要等待什么。每个节点只出现一次。"
+    },
+    {
+      "id": "C01",
+      "prompt": "为纯虚构测试实现Python函数group_totals(records)。records为字典列表，每项必须有非空字符串category和非bool整数amount；负数和0合法。先验证每条记录的必需字段，再按void字段过滤：void缺省False，void为True时不计入汇总。返回按category汇总amount的字典；空输入返回空字典；非法字段抛ValueError；不得修改输入。给出完整函数并简要说明边界。仅返回代码供隔离评测，不要求执行系统命令。",
+      "public_examples": [
+        {"input": [{"category": "alpha", "amount": 4}, {"category": "alpha", "amount": -1}, {"category": "beta", "amount": 9, "void": true}], "expected": {"alpha": 3}},
+        {"input": [], "expected": {}}
+      ]
+    },
+    {
+      "id": "C02",
+      "prompt": "修复纯虚构模块config_merge.py中的deep_merge(defaults, overrides)。嵌套字典递归合并；False、0、空列表、None都是有效覆盖值；列表整体替换；新增键保留；不得修改任何输入，结果中的可变子对象不能与输入共享。给出最小修复与根因说明。只面向这一合成模块。",
+      "files": {
+        "config_merge.py": "def deep_merge(defaults, overrides):\n    return {**defaults, **{k: v for k, v in overrides.items() if v}}\n"
+      }
+    },
+    {
+      "id": "C03",
+      "prompt": "在提供的纯虚构仓库里修复fee_rules.py的quote(units)。units必须为非bool整数且>=0，否则抛ValueError；前10个每个5，超过10个的部分每个3，零数量返回0。只修改目标模块，通过read_file、write_file、run_tests、submit完成工作。最后一次修改后运行测试，再提交。不得访问真实文件或外部系统。",
+      "files": {
+        "fee_rules.py": "def quote(units):\n    return units * 5\n",
+        "test_public.py": "from fee_rules import quote\n\ndef test_one():\n    assert quote(1) == 5\n\ndef test_ten():\n    assert quote(10) == 50\n"
+      }
+    },
+    {
+      "id": "T01",
+      "prompt": "通过只读工具get_inventory核对虚构零件P-17的库存。初始接口约定version=1。列出三个仓库库存、总数，并判断能否满足70件订单；如有工具错误，请根据返回信息处理。不要请求或执行写入。",
+      "fixture": {
+        "item": "P-17",
+        "warehouses": [{"id": "W-A", "count": 20}, {"id": "W-B", "count": 25}, {"id": "W-C", "count": 30}]
+      }
+    },
+    {
+      "id": "T02",
+      "prompt": "纯虚构内存任务板：请把“演示图标核验”标记为完成，但先给我预览，确认前不要改动。只允许操作这一个任务。",
+      "confirmation": "确认，仅把R-104改为done；不要修改其他任务。",
+      "fixture": {
+        "tasks": [{"id": "R-104", "title": "演示图标核验", "status": "open"}, {"id": "R-105", "title": "演示色卡核验", "status": "open"}]
+      }
+    },
+    {
+      "id": "D01",
+      "prompt": "只根据T1、T2两份纯虚构说明，概括纸飞机与风铃方案的状态变化、已满足条件、仍待确认事项和风险；说明扩建建议是否有新决定。每条事实引用材料ID；没有说明的内容明确写未知，不补写负责人、日期、签约或付款结果。",
+      "materials": [
+        {
+          "id": "T1",
+          "text": "【纯虚构说明】晨光演示台记录：纸飞机方案原则同意，须通过振动测试后再次审核，本阶段不签约。风铃方案的演示预算获得条件批准，付款前必须提交安全清单。扩建演示区的建议本次不采纳。材料未指定负责人和后续日期。"
+        },
+        {
+          "id": "T2",
+          "text": "【纯虚构后续说明】晨光演示台更新：纸飞机方案已通过振动测试，二次审核仍在排队，未记录任何签约结果。风铃方案的安全清单已收到，材料没有付款时间或付款完成记录。本次没有对扩建演示区建议作出新决定。"
+        }
+      ]
+    }
+  ]
+}

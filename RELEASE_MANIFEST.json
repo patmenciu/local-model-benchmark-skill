@@ -1,0 +1,83 @@
+{
+  "package_version": "1.0.0",
+  "question_set_version": "public-synthetic-1",
+  "material_origin": "newly-authored-fiction-only",
+  "validation": "23 offline tests; skill structure check passed; no live model execution",
+  "files": [
+    {
+      "file": ".gitignore",
+      "sha256": "3e85047a9f23050279d987ca07e3ba931c6932695a3b705d33d3af4095fbb4eb",
+      "bytes": 84
+    },
+    {
+      "file": "README.md",
+      "sha256": "1ff096d46f2a6c851d4e37833a76a12ff10e94c9ad05365e604b600f7257dfdf",
+      "bytes": 4103
+    },
+    {
+      "file": "TECHNICAL_NOTES.md",
+      "sha256": "3e723646e760ed60bb241abeead2a5c38fa1e46f4c7afed570e648bb2c943248",
+      "bytes": 2623
+    },
+    {
+      "file": "DEVELOPMENT_PROGRESS.md",
+      "sha256": "7a52658a600eaa0c30462da485ac5d9b34c1f4906018765f1370c2ef733e4775",
+      "bytes": 589
+    },
+    {
+      "file": "tests/test_report.py",
+      "sha256": "c7ead38f5cd73110a33ae6c580edc2484a62a2377239490d760e35957d77d8fa",
+      "bytes": 8779
+    },
+    {
+      "file": "local-model-benchmark/SKILL.md",
+      "sha256": "d6c8ef84aabb86cf10bf41ceffa44b8c3acd0a200274e3cf1d356feb5780b7db",
+      "bytes": 3151
+    },
+    {
+      "file": "local-model-benchmark/agents/openai.yaml",
+      "sha256": "8ccae0ac42d174f39af7f3cb349a3a75003d24aaf2768cfed50ac58be6bf17ed",
+      "bytes": 354
+    },
+    {
+      "file": "local-model-benchmark/examples/synthetic-tasks.json",
+      "sha256": "26471b403e56a6ddfef7bd3d5e35d04ab9a3da555fdced34e77cf190cf4b695a",
+      "bytes": 4972
+    },
+    {
+      "file": "local-model-benchmark/examples/result-template.json",
+      "sha256": "25ba4913cd214765aa25366d203ab0a621cef1d18d104c4ad3bbc8b4826799dd",
+      "bytes": 1464
+    },
+    {
+      "file": "local-model-benchmark/references/method.md",
+      "sha256": "b2900fa1e84682d7ff6a7bac4947e1da2081318cbb905c28c9db9837e6945dca",
+      "bytes": 3131
+    },
+    {
+      "file": "local-model-benchmark/references/task-contracts.md",
+      "sha256": "a98226dbe18060051f15bc06e6fc5f285e686405a1789895cd25187ba1f92042",
+      "bytes": 3513
+    },
+    {
+      "file": "local-model-benchmark/references/evaluator.md",
+      "sha256": "8ba92128932d1d4a19c442f1cdeb7fb01d4eb9cb5b318ba5fbe01301b780e9a6",
+      "bytes": 3098
+    },
+    {
+      "file": "local-model-benchmark/references/result-format.md",
+      "sha256": "1d71f9bf3cd26ce236c3f6be2b7746cd34e157ad36806d613a2a3b0759755033",
+      "bytes": 2787
+    },
+    {
+      "file": "local-model-benchmark/scripts/path_guard.py",
+      "sha256": "69acf8421ea7b61da63e51f80b736c9753a341af8f4735cbdb58b9da5effca74",
+      "bytes": 1665
+    },
+    {
+      "file": "local-model-benchmark/scripts/report.py",
+      "sha256": "eacf02dd3c6e342d55932fa86f30b1c382db3ca21871d219fd9a5c7b1345e19b",
+      "bytes": 11029
+    }
+  ]
+}

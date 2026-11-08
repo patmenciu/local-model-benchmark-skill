@@ -1,8 +1,8 @@
 {
-  "package_version": "1.0.0",
+  "package_version": "1.1.0",
   "question_set_version": "public-synthetic-1",
   "material_origin": "newly-authored-fiction-only",
-  "validation": "23 offline tests; skill structure check passed; no live model execution",
+  "validation": "23 offline regression tests passed; documentation-only runtime-metadata update; no live model run.",
   "files": [
     {
       "file": ".gitignore",
@@ -10,29 +10,24 @@
       "bytes": 84
     },
     {
+      "file": "DEVELOPMENT_PROGRESS.md",
+      "sha256": "3aa432e9358dec90fa32ad191bb04da830d89370985a468ab452c6ef013d0434",
+      "bytes": 948
+    },
+    {
       "file": "README.md",
-      "sha256": "1ff096d46f2a6c851d4e37833a76a12ff10e94c9ad05365e604b600f7257dfdf",
-      "bytes": 4103
+      "sha256": "9ddfe7793be3e1bf91ba1337058daef8b7f5655d72ac4b03fbab13dbab77c2e3",
+      "bytes": 4378
     },
     {
       "file": "TECHNICAL_NOTES.md",
-      "sha256": "3e723646e760ed60bb241abeead2a5c38fa1e46f4c7afed570e648bb2c943248",
-      "bytes": 2623
-    },
-    {
-      "file": "DEVELOPMENT_PROGRESS.md",
-      "sha256": "7a52658a600eaa0c30462da485ac5d9b34c1f4906018765f1370c2ef733e4775",
-      "bytes": 589
-    },
-    {
-      "file": "tests/test_report.py",
-      "sha256": "c7ead38f5cd73110a33ae6c580edc2484a62a2377239490d760e35957d77d8fa",
-      "bytes": 8779
+      "sha256": "0cd95d5b813a0a0d9b793ebcd85635dcb5bd75cea8f637338c0593211b5e984e",
+      "bytes": 3446
     },
     {
       "file": "local-model-benchmark/SKILL.md",
-      "sha256": "d6c8ef84aabb86cf10bf41ceffa44b8c3acd0a200274e3cf1d356feb5780b7db",
-      "bytes": 3151
+      "sha256": "5103c02e440f0ef9bd732168cdd24c7d300ff60d907430a2db0daf4f9d9414e9",
+      "bytes": 3519
     },
     {
       "file": "local-model-benchmark/agents/openai.yaml",
@@ -40,24 +35,14 @@
       "bytes": 354
     },
     {
-      "file": "local-model-benchmark/examples/synthetic-tasks.json",
-      "sha256": "26471b403e56a6ddfef7bd3d5e35d04ab9a3da555fdced34e77cf190cf4b695a",
-      "bytes": 4972
-    },
-    {
       "file": "local-model-benchmark/examples/result-template.json",
       "sha256": "25ba4913cd214765aa25366d203ab0a621cef1d18d104c4ad3bbc8b4826799dd",
       "bytes": 1464
     },
     {
-      "file": "local-model-benchmark/references/method.md",
-      "sha256": "b2900fa1e84682d7ff6a7bac4947e1da2081318cbb905c28c9db9837e6945dca",
-      "bytes": 3131
-    },
-    {
-      "file": "local-model-benchmark/references/task-contracts.md",
-      "sha256": "a98226dbe18060051f15bc06e6fc5f285e686405a1789895cd25187ba1f92042",
-      "bytes": 3513
+      "file": "local-model-benchmark/examples/synthetic-tasks.json",
+      "sha256": "26471b403e56a6ddfef7bd3d5e35d04ab9a3da555fdced34e77cf190cf4b695a",
+      "bytes": 4972
     },
     {
       "file": "local-model-benchmark/references/evaluator.md",
@@ -65,9 +50,24 @@
       "bytes": 3098
     },
     {
+      "file": "local-model-benchmark/references/method.md",
+      "sha256": "948f35cda70c15df20bd2bdd177c4138209397eb8dab3d035d728776dccedc4c",
+      "bytes": 3285
+    },
+    {
       "file": "local-model-benchmark/references/result-format.md",
       "sha256": "1d71f9bf3cd26ce236c3f6be2b7746cd34e157ad36806d613a2a3b0759755033",
       "bytes": 2787
+    },
+    {
+      "file": "local-model-benchmark/references/runtime-metadata.md",
+      "sha256": "2a3d0938e15610b0df86754e9ea860a72ae05f1211e7044cf43a785b581b9346",
+      "bytes": 2987
+    },
+    {
+      "file": "local-model-benchmark/references/task-contracts.md",
+      "sha256": "a98226dbe18060051f15bc06e6fc5f285e686405a1789895cd25187ba1f92042",
+      "bytes": 3513
     },
     {
       "file": "local-model-benchmark/scripts/path_guard.py",
@@ -78,6 +78,11 @@
       "file": "local-model-benchmark/scripts/report.py",
       "sha256": "eacf02dd3c6e342d55932fa86f30b1c382db3ca21871d219fd9a5c7b1345e19b",
       "bytes": 11029
+    },
+    {
+      "file": "tests/test_report.py",
+      "sha256": "c7ead38f5cd73110a33ae6c580edc2484a62a2377239490d760e35957d77d8fa",
+      "bytes": 8779
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "package_version": "1.1.0",
+  "package_version": "1.1.1",
   "question_set_version": "public-synthetic-1",
-  "material_origin": "newly-authored-fiction-only",
-  "validation": "23 offline regression tests passed; documentation-only runtime-metadata update; no live model run.",
+  "material_origin": "synthetic_tasks",
+  "validation": "23 offline regression tests previously passed; no model or benchmark changes in this revision.",
   "files": [
     {
       "file": ".gitignore",
@@ -11,28 +11,28 @@
     },
     {
       "file": "DEVELOPMENT_PROGRESS.md",
-      "sha256": "3aa432e9358dec90fa32ad191bb04da830d89370985a468ab452c6ef013d0434",
-      "bytes": 948
+      "sha256": "4da14035bf3b1cf89220d8413be87e522e9d45f20f1da767681495eabb803e4a",
+      "bytes": 478
     },
     {
       "file": "README.md",
-      "sha256": "9ddfe7793be3e1bf91ba1337058daef8b7f5655d72ac4b03fbab13dbab77c2e3",
-      "bytes": 4378
+      "sha256": "e426ebec2c7655024610de2087c25190c334eff73b07fb73d8cf463e458c8ace",
+      "bytes": 2752
     },
     {
       "file": "TECHNICAL_NOTES.md",
-      "sha256": "0cd95d5b813a0a0d9b793ebcd85635dcb5bd75cea8f637338c0593211b5e984e",
-      "bytes": 3446
+      "sha256": "bbbbeb02d393c5e9869661f693bcf3a2a5347bf68275a2bb736458b5e4f8c566",
+      "bytes": 1948
     },
     {
       "file": "local-model-benchmark/SKILL.md",
-      "sha256": "5103c02e440f0ef9bd732168cdd24c7d300ff60d907430a2db0daf4f9d9414e9",
-      "bytes": 3519
+      "sha256": "49e62ce24281af26c5973e7ded62ef9f859892a14999073d8ca9d51530165f0a",
+      "bytes": 2160
     },
     {
       "file": "local-model-benchmark/agents/openai.yaml",
-      "sha256": "8ccae0ac42d174f39af7f3cb349a3a75003d24aaf2768cfed50ac58be6bf17ed",
-      "bytes": 354
+      "sha256": "7ac64264c3833d9ddfdfc5dcfcb69595681d7e09790cb0d0e9889aaef9ae04c0",
+      "bytes": 287
     },
     {
       "file": "local-model-benchmark/examples/result-template.json",
@@ -41,8 +41,8 @@
     },
     {
       "file": "local-model-benchmark/examples/synthetic-tasks.json",
-      "sha256": "26471b403e56a6ddfef7bd3d5e35d04ab9a3da555fdced34e77cf190cf4b695a",
-      "bytes": 4972
+      "sha256": "5bd2ac3d63cac775656ddb8245daa4bcc85b8ae61aaaa2afa0d09ee6c0346608",
+      "bytes": 4874
     },
     {
       "file": "local-model-benchmark/references/evaluator.md",
